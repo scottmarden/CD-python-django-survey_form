@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Results!</title>
+	</head>
+	<body>
+		<h1>Thank you for submitting your survey. Your information is below</h1>
+		<fieldset>
+			<h3>Name: {{ request.session.name}}</h3>
+			<h3>location: {{ request.session.location}}</h3>
+			<h3>Language: {{ request.session.language}}</h3>
+			<h3>Comments: {{ request.session.comments}}</h3>
+		</fieldset>
+
+	</body>
+</html>
